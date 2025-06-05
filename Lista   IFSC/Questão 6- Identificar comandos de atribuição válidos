@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+
+
+int main() {
+
+    printf("Questão 6:\n");
+
+    // Comandos de atribuição válidos
+
+    int teste, cod;
+
+    float soma, x;
+
+    char nome[20], cor[20];
+
+    
+
+    // (X) teste = cod || ((x)*2 != soma)
+
+    // (X) tudo = soma
+
+    // (X) x = nome >= cor; // Não é válido
+
+    // (X) cod = cor == 'verde'; // Não é válido
+
+    // (X) tudo = !teste || cod && (soma < x);
+
+    return 0;
+
+}
+
