@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+
+    
+
+    printf("a) ('mario' == 'maria') = %d\n", ('mario' == 'maria')); // 0 (FALSO)
+
+    printf("b) (2 + 4 == 6) = %d\n", (2 + 4 == 6)); // 1 (VERDADEIRO)
+
+    printf("c) (10 - 4 > 7) = %d\n", (10 - 4 > 7)); // 0 (FALSO)
+
+    printf("d) ((2 * 3) > (3 * 2)) = %d\n", ((2 * 3) > (3 * 2))); // 0 (FALSO)
+
+    printf("e) !('a' > 'A') = %d\n", !('a' > 'A')); // 1 (VERDADEIRO)
+
+    return 0;
+
+}
+
