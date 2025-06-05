@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+
+
+int main() {
+
+   
+
+    int A, B, C, D;
+
+    printf("Digite quatro números A, B, C e D: ");
+
+    scanf("%d %d %d %d", &A, &B, &C, &D);
+
+    printf("Resultados:\n");
+
+    printf("A + B = %d\n", A + B);
+
+    printf("A + C = %d\n", A + C);
+
+    printf("A + D = %d\n", A + D);
+
+    printf("B + C = %d\n", B + C);
+
+    printf("B + D = %d\n", B + D);
+
+    printf("C + D = %d\n", C + D);
+
+    return 0;
+
+}
+
