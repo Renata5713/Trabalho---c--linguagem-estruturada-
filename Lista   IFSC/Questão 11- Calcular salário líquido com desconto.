@@ -1,0 +1,28 @@
+include <stdio.h>
+
+
+
+
+
+int main() {
+
+    printf("Questão 11:\n");
+
+    float HT, VH, PD, SB, TD, SL;
+
+    printf("Digite as horas trabalhadas, valor da hora e percentual de desconto: ");
+
+    scanf("%f %f %f", &HT, &VH, &PD);
+
+    SB = HT * VH;
+
+    TD = (PD / 100) * SB;
+
+    SL = SB - TD;
+
+    printf("Salário Bruto: %.2f, Total de Desconto: %.2f, Salário Líquido: %.2f\n", SB, TD, SL);
+
+    return 0;
+
+}
+
