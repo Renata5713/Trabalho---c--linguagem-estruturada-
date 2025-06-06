@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+
+
+int main() {
+
+    int i, soma = 0;
+
+
+
+    printf("Números pares entre 85 e 907:\n");
+
+
+
+    for (i = 86; i <= 906; i += 2) {
+
+        printf("%d ", i);
+
+        soma += i;
+
+    }
+
+
+
+    printf("\nSoma dos valores: %d\n", soma);
+
+    return 0;
+
+}
+
