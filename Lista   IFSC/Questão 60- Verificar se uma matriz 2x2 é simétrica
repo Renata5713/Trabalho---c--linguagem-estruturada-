@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+
+    int matriz[2][2];
+
+    int simetrica = 1; // Assume que é simétrica
+
+    printf("Digite os elementos da matriz 2x2:\n");
+
+    for (int i = 0; i < 2; i++) {
+
+        for (int j = 0; j < 2; j++) {
+
+            scanf("%d", &matriz[i][j]);
+
+        }
+
+    }
+
+    // Verificando simetria
+
+    if (matriz[0][1] != matriz[1][0]) {
+
+        simetrica = 0;
+
+    }
+
+    if (simetrica) {
+
+        printf("A matriz é simétrica.\n");
+
+    } else {
+
+        printf("A matriz não é simétrica.\n");
+
+    }
+
+    return 0;
+
+}
+
