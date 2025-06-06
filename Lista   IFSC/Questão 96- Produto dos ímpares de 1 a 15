@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+
+
+int main() {
+
+    int i;
+
+    long long produto = 1;
+
+
+
+    for (i = 1; i <= 15; i += 2) {
+
+        produto *= i;
+
+    }
+
+
+
+    printf("Produto dos inteiros ímpares de 1 a 15: %lld\n", produto);
+
+    return 0;
+
+}
+
