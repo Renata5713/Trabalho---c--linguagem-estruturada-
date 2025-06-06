@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+
+    char nome[50];
+
+    float valor_venda, comissao;
+
+    printf("Digite o nome do corretor: ");
+
+    scanf("%s", nome);
+
+    printf("Digite o valor da venda: ");
+
+    scanf("%f", &valor_venda);
+
+    
+
+    if (valor_venda > 50000) {
+
+        comissao = valor_venda * 0.12;
+
+    } else if (valor_venda >= 30000) {
+
+        comissao = valor_venda * 0.095;
+
+    } else {
+
+        comissao = valor_venda * 0.07;
+
+    }
+
+    
+
+    printf("Corretor: %s, Valor da venda: %.2f, Comissão: %.2f\n", nome, valor_venda, comissao);
+
+    return 0;
+
+}
+
