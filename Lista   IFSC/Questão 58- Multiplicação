@@ -1,0 +1,64 @@
+#include <stdio.h>
+
+int main() {
+
+    int matrizA[2][2], matrizB[2][2], resultado[2][2] = {0};
+
+    printf("Digite os elementos da matriz A 2x2:\n");
+
+    for (int i = 0; i < 2; i++) {
+
+        for (int j = 0; j < 2; j++) {
+
+            scanf("%d", &matrizA[i][j]);
+
+        }
+
+    }
+
+    printf("Digite os elementos da matriz B 2x2:\n");
+
+    for (int i = 0; i < 2; i++) {
+
+        for (int j = 0; j < 2; j++) {
+
+            scanf("%d", &matrizB[i][j]);
+
+        }
+
+    }
+
+    // Multiplicando as matrizes
+
+    for (int i = 0; i < 2; i++) {
+
+        for (int j = 0; j < 2; j++) {
+
+            for (int k = 0; k < 2; k++) {
+
+                resultado[i][j] += matrizA[i][k] * matrizB[k][j];
+
+            }
+
+        }
+
+    }
+
+    printf("Resultado da multiplicação:\n");
+
+    for (int i = 0; i < 2; i++) {
+
+        for (int j = 0; j < 2; j++) {
+
+            printf("%d ", resultado[i][j]);
+
+        }
+
+        printf("\n");
+
+    }
+
+    return 0;
+
+}
+
