@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int i, num, soma = 0, maior, menor;
+
+    printf("Digite o 1º número: ");
+    scanf("%d", &num);
+
+    soma = maior = menor = num;
+
+    for (i = 2; i <= 10; i++) {
+        printf("Digite o %dº número: ", i);
+        scanf("%d", &num);
+
+        soma += num;
+
+        if (num > maior) maior = num;
+        if (num < menor) menor = num;
+    }
+
+    printf("Média: %.2f\n", soma / 10.0);
+    printf("Maior número: %d\n", maior);
+    printf("Menor número: %d\n", menor);
+
+    return 0;
+}
