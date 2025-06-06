@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main() {
+
+    float valor_compra, valor_troco;
+
+    int notas_100, notas_10, notas_1;
+
+    printf("Digite o valor da compra: ");
+
+    scanf("%f", &valor_compra);
+
+    printf("Digite o valor do troco: ");
+
+    scanf("%f", &valor_troco);
+
+    
+
+    valor_troco = valor_troco - valor_compra;
+
+    
+
+    notas_100 = valor_troco / 100;
+
+    valor_troco = (int)valor_troco % 100;
+
+    
+
+    notas_10 = valor_troco / 10;
+
+    valor_troco = (int)valor_troco % 10;
+
+    
+
+    notas_1 = valor_troco;
+
+    
+
+    printf("Valor da compra: %.2f, Troco: %.2f\n", valor_compra, valor_troco);
+
+    printf("Notas de 100: %d, Notas de 10: %d, Notas de 1: %d\n", notas_100, notas_10, notas_1);
+
+    return 0;
+
+}
+
+
