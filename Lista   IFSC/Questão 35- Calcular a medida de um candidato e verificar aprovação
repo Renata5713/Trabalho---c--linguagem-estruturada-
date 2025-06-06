@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+
+    char nome[50];
+
+    float nota1, nota2, nota3, media;
+
+    printf("Digite o nome do candidato: ");
+
+    scanf("%s", nome);
+
+    printf("Digite as notas das provas: ");
+
+    scanf("%f %f %f", &nota1, &nota2, &nota3);
+
+    media = (nota1 + nota2 + nota3) / 3;
+
+    printf("Nome: %s, Média: %.2f\n", nome, media);
+
+    if (media >= 7.0 && nota1 >= 5.0 && nota2 >= 5.0 && nota3 >= 5.0) {
+
+        printf("Aprovado\n");
+
+    } else {
+
+        printf("Reprovado\n");
+
+    }
+
+    return 0;
+
+}
+
